@@ -1,0 +1,24 @@
+#a{
+    max-width: 300px;
+    height: 50px;
+    background-color: coral;
+    overflow: visible;
+}
+#b{
+    max-width: 300px;
+    height: 50px;
+    background-color: coral;
+    overflow: hidden;
+}
+#c{
+    max-width: 300px;
+    height: 50px;
+    background-color: coral;
+    overflow: auto;
+}
+#d{
+    max-width: 300px;
+    height: 50px;
+    background-color: coral;
+    overflow-x: scroll;
+}

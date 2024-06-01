@@ -1,0 +1,34 @@
+/* Html is also called as markup */
+/* background colour */
+.blue{
+    background-color: rgba(105, 93, 187, 0.4);
+    /* a at end of rgba tells opacity/ransparency */
+}
+
+.greenyellow{
+    background-color: red;
+    opacity: 0.5;
+}
+.img{
+    background-color: seagreen;
+    background-image: url("ben.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: scroll;
+}
+.a{
+    background-color: yellow;
+    background-image: url("download\ \(1\).jpg");
+    background-repeat: repeat-y;
+    background-position: right;
+    background-attachment: fixed;
+    /* Make browser window small and scroll down to notice the difference */
+}
+p{
+    background: slategray url("ben.jpg") round right fixed;
+    /* background=   background-color;
+                     background-image;
+                     background-repeat;
+                     background-position;
+                     background-attachment */
+}

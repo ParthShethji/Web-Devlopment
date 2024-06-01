@@ -1,0 +1,39 @@
+#a{
+    color: darkgreen;
+    text-align: center;
+    text-decoration: underline;
+    /* Its not recommended to underline text as its confused with link */
+    text-transform: initial;
+    text-shadow: 2px 2px 5px red;
+    /* 2px-shadow      5px- blur effect */
+}
+#b{
+    text-indent: 50px;
+    /* Used to empasize first line of para */
+    letter-spacing: 2px;
+    line-height: 3px;
+    word-spacing: 10px;
+    white-space: nowrap;
+    /* Tells hat to do with white space */
+
+}
+#p1{
+    font-family: 'Brush Script MT', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    /* Why do we add so many font this is bcoz theres no 100% guarantee that this font is found thats why we add backup fonts if first doesnt work comp. goes o next and so on */
+    /*best safe fonts
+     Arial (sans-serif)
+Verdana (sans-serif)
+Helvetica (sans-serif)
+Tahoma (sans-serif)
+Trebuchet MS (sans-serif)
+Times New Roman (serif)
+Georgia (serif)
+Garamond (serif)
+Courier New (monospace)
+Brush Script MT (cursive)
+Copperplate, Papyrus, fantasy */
+font-size: 4vw;
+/* always put size in 'em' px/16=em */
+
+/*Alwaysuse vs for different screen sizes  Viewport is the browser window size. 1vw = 1% of viewport width. If the viewport is 50cm wide, 1vw is 0.5cm. */
+}

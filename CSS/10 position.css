@@ -1,0 +1,36 @@
+#a{
+    position: static;
+    border: 3px solid red;
+}
+#b{
+    position: relative;
+    left: 30px;
+    /*
+     we need to specify atleast one position 
+        left
+        right
+        top
+        bottom
+     */
+     border: 3px solid royalblue;
+}
+#c{
+    position: fixed;
+    bottom: 0px;
+    right: 50%;
+    border: 3px solid goldenrod;
+}
+#d{
+    position: absolute;
+    right: 50%;
+    top: 1px;
+    border: 3px solid #73AD21
+}
+#e{
+    /* Note: Internet Explorer does not support sticky positioning. Safari requires a -webkit- prefix (see example below). You must also specify at least one of top, right, bottom or left for sticky positioning to work. */
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+    background-color: green;
+    border: 2px solid #4CAF50
+}

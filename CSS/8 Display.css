@@ -1,0 +1,17 @@
+/* Setting the display property of an element only changes how the element is displayed, NOT what kind of element it is. So, an inline element with display: block; is not allowed to have other block elements inside it. */
+/* Its the most important property */
+#a{
+    background-color: blueviolet;
+    display: inline;
+}
+#b{
+    background-color: aqua;
+    display: block;
+}
+#c{
+    display: none;
+    /* this will hide the thing and doesnot affect layout */
+}
+#d{
+    visibility: hidden;
+}

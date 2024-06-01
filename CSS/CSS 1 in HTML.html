@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS in HTML</title>
+    <!-- the thing that comes afterwards will act on web page for internal and external-->
+    <style>          
+    /* Internal CSS */
+    #lorem45{
+        color: rgb(255, 1, 255);
+    }
+    #a1{
+            color: darkorange;
+        }
+    
+      /*1       this is element selector */
+    .greenbg{
+            background-color: green;
+        }
+      /*2        this is class selector*/
+    span, footer{
+        background-color: rgb(243, 178, 59);
+    }
+        /* 3    this is group selector */
+        /* "*" is a  universal selector selects entire script */
+    </style>
+</head>
+<body>
+    <h1>CSS tutorial</h1>
+     <!-- style="color: chocolate; background-color: cyan;" -->
+  <p id="a1" class="greenbg">Example of inline CSS</p>
+  <!-- priority given to inline > internal -->
+  <p id="lorem45" class="greenbg">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum aperiam, dolore excepturi dolorem tempora explicabo unde adipisci a tenetur voluptatem temporibus eaque quos consequuntur earum assumenda suscipit omnis asperiores inventore eius fuga autem fugiat magnam corrupti! Impedit temporibus expedita doloremque repellat perferendis iure eligendi est.</p>
+      <span> This is span</span>
+  <footer> This is footer</footer>
+</body>
+</html>
+
+

@@ -1,0 +1,24 @@
+a#a:link, a#a:visited{
+    background-color: blue;
+    color: whitesmoke;
+    padding: 2px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: xx-small;
+}
+a#a:hover, a#a:active{
+    background-color: red;
+}
+a#b:link, a#b:visited{
+    background-color:gold;
+    color: whitesmoke;
+    padding: 2px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: medium;
+}
+a#b:hover, a#b:active{
+    background-color: red;
+}

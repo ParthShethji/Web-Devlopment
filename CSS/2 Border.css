@@ -1,0 +1,52 @@
+/* other css brder properties cant be applied if border style is not selected */
+#a{
+    border-style: dotted;
+    border-width: 5px;
+    margin: 25px 50px 75px 100px;
+    height: 100px;
+}
+#b{
+    border-style: dashed;
+    border-width: medium;
+    border-color: deeppink gray yellowgreen peru;
+    /* deeppink- top          gray-right     yellowgreen- bottom     peru-left */
+}
+#c{
+    border-style: solid;
+    border-width: 5px 20px; 
+    /* 5px top and bottom, 20px on the sides. First is top and bottom second is sides */
+    border-color: palegreen;
+    padding: 25px 50px 75px 100px;
+    /* padding with width is not recommended here total widt/padding becomes 30 on top and so on both add up */
+}
+#d{
+    border-style: double;
+    border-color: orangered;
+}#e{
+    border-style: groove;
+    border-color: rgb(127, 127, 212);
+}#f{
+    border-style: ridge;
+    background-color: cyan;
+}#g{
+    border-style: inset;
+    border-color: red;
+    background-color: wheat;
+}#h{
+    border-style: outset;
+    border-left: 5px darkred;
+    background-color: darkgrey;
+}#i{
+    border-style: none;
+}#j{
+    border-style: hidden;
+}
+#k{
+    border-style: dotted dashed solid double;
+}
+.l{
+    margin: 20px;
+    padding: 50px;
+    max-width: max-content;
+    border: 15px darkred;
+}

@@ -1,0 +1,51 @@
+it stores data in form of documents. it uses BSON to query database. JSON is slow at text parsingit supports only limited no. of data types
+
+BSON =  binary JSON
+
+SQL has tables, mongodb has collections
+SQL has columns, mongodb has fields
+SQL has row, mongodb has document
+
++each document has a unique property called id given by mongodb
+
+
+show dbs
+exit
+use bookstore
+db.books.insertOne({title: "The Color of Magic", author: "Terry Pratchett", pages: 300, rating:7, genres: ["fantasy", "magic"]})
+
+to add many instead of insertOne --- insertMany
+
+
+db.books.find({rating:7})
+to get specific fields only in output --- db.books.find({rating:7}, {title: 1, author:1})
+
+we can also limit the number of searches == db.books.find().limit(3)
+
+to count --- db.books.find().count()
+
+to sort --- db.books.sort({title:1})     1-ascending, -1-descending
+
+to add nested elements ---  db.books.insertOne({title: "The Way of Kings", author: "Brandon Sanderson", rating: 9, pages:400, genres: ["fantasy"], reviews: [{name: "Yoshi", body: "Great book!!"}, {name: "mario", body: "so so"}]})
+
+we always use '$' before any operator --- db.books.find({rating:{$gt: 7}})  
+gt---greater than, gte---greater than equal to
+//or operator
+bookstore> db.books.find({$or: [{rating: 7}, {rating: 9}]})
+
+
+'in' within the values of array --- db.books.find({ rating: {$in: [7,8,9]}}) 
+nin --- not inside
+it is used to find the exact match of the value
+
+for nested document we use '.' operator.
+
+to delete --- db.books.deleteOne ({id: ObjectId("622b746cd28eddc86c808d41") })
+
+to update we use set operator---  db.books.updateOne({_id: ObjectId("6415b423f7cb62ccac417125")}, {$set: {rating: 8, pages: 360}})
+
+
+to remove --- db.books. updateOne({_id: ObjectId("622b746cd28eddc86c808d41") }, {$pull: {genres: "fantasy"}})
+
+
+to work with applications we must work with mongodb drivers

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <form action="Backend.php"></form>
+    <div>
+    Name: <input type="text" name="myname" id="">       <!-- Whats name="" here its name that backend will repreent for this-->
+    <!-- Dont add "<" before iput to get suggestion -->
+</div>
+<div>
+     Role: <input type="text" name="myrole" id="">
+    </div>
+     <!-- we can use br tag to get role to next line but that is not recommended bcoz we will use CSS to do that instead we will use div tag as its block element  to add spac and all we will use CSS-->
+     <div>
+         <label for="Email"> Email</label>
+      <input type="email" name="myemaiil" id="Email">
+      <!-- id means if we click on email it automatically comes in box to type or else it if we click the thing try try to select email and try to select email on webpae. But with id labell tag must be used and input in id and label should be same and theres no need to write email before input you must write it in label-->
+     </div>
+     <div>
+         Gender: Male<input type="radio" name="mygender" id="">
+         Female<input type="radio" name="mygender" id="">
+        </div>
+        <div>
+            Write about yourself: <textarea name="Info" id="" cols="30" rows="4"></textarea>
+            <!-- Box to write text area can be dragged from bottom right corner to change its dimension -->
+        </div>
+        <div>
+            Are you elgible? <input type="checkbox" name="myeligibility" id="" checked> 
+            <!-- checked means that it by default comes checked -->
+        </div>
+        <div>
+            <label for="Card"> Card</label>
+            <select name="myCard" id="Card">
+            <option value="Visa">Visa</option>
+            <option value="Mastercard" selected>Mastercard</option>  <!--use selected for by default-->
+            <option value="UPI">UPI</option>
+        </select>
+        </div>
+        <div>
+            <input type="submit" value="Submit Now">
+            <input type="reset" value="Reset Now">
+        </div>
+</body>
+</html>

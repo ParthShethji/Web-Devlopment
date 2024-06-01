@@ -1,0 +1,23 @@
+what does position mean 
+
+what are absoulute. relative
+
+what is z index
+
+.flex-1 {
+    flex: 1 1 0%;
+}
+
+
+max-lg:hidden
+
+pt how does it look
+
+
+justify-center - centers horizintally
+ items-center - centers vertically
+
+
+how does mapping work
+
+xl:-whitespace-nowrap 

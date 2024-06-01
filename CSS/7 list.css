@@ -1,0 +1,24 @@
+ul#a{
+    list-style-type: square;
+    list-style-position: inside;
+    background-color: rgb(241, 23, 23);
+    padding: 20px;
+}
+ul li{
+    background-color: rgb(250, 136, 136);
+    margin-left: 35px;
+    padding: 5px;
+    color: aliceblue;
+}
+ol#b{
+    list-style-type: circle;
+    list-style-position: outside;
+    background-color: rgb(12, 12, 247);
+    padding: 20px;
+}
+ol li{
+    background-color: rgb(151, 151, 243);
+    margin: 5px;
+    border-color: blue;
+    padding: 4px;
+}

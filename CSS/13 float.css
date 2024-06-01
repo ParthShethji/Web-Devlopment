@@ -1,0 +1,26 @@
+#a{
+    background-color: rgb(252, 215, 189);
+    padding: 5px;
+    float: left;
+    border: 2px solid rgb(3, 3, 3);
+    width: 75px;
+    font-family: fantasy;
+}
+#b{
+    background-color: rgb(189, 252, 210);
+    padding: 5px;
+    float: right;
+    border: 2px solid rgb(3, 3, 3);
+    width: 75px;
+}
+img{
+    float: left;
+    width: 225px;
+    height: 123px;
+    margin: 15px;
+}
+#c{
+    clear: both;
+    border: 3px black solid;
+    overflow: auto;
+}
