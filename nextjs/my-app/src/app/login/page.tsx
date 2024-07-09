@@ -27,14 +27,14 @@ export default function LoginForm() {
   const onLogin = async ()=>{
     try {
       const response = await axios.post("/api/users/login", user);
+      console.log(response)
       toast.success("Login Successful", {
         duration: 3000,
         position: 'top-center',
       })
-      setTimeout(() => {
-        router.push("/")
-      }, 2000);
       console.log("login")
+      router.push("/profile")
+      
     } catch (error:any) {
       toast.error("Login failed")
       console.log(error)
